@@ -9,9 +9,14 @@
 /* Begin PBXBuildFile section */
 		9B598F361F8BCFA400FCAB49 /* DataObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B598F351F8BCFA400FCAB49 /* DataObserver.swift */; };
 		9B598F3E1F8BD7A400FCAB49 /* VideoRecordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B598F3D1F8BD7A400FCAB49 /* VideoRecordTests.swift */; };
+		9BA7A1EC1F8E62E700D8FDA0 /* RecordingContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA7A1EB1F8E62E700D8FDA0 /* RecordingContainerController.swift */; };
 		9BF62A4F1F8CEB3200AE9141 /* VideoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF62A4E1F8CEB3200AE9141 /* VideoUtils.swift */; };
 		9BF62A511F8CEC9F00AE9141 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF62A501F8CEC9F00AE9141 /* Video.swift */; };
 		9BF62A591F8CFC0300AE9141 /* AZVideoRecorderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF62A581F8CFC0300AE9141 /* AZVideoRecorderUITests.swift */; };
+		9BF62A621F8D032000AE9141 /* VideoPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF62A611F8D032000AE9141 /* VideoPlayerController.swift */; };
+		9BF62A641F8D11BE00AE9141 /* AppMemento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF62A631F8D11BE00AE9141 /* AppMemento.swift */; };
+		9BF62A681F8D135C00AE9141 /* AppStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF62A671F8D135C00AE9141 /* AppStates.swift */; };
+		9BF62A701F8D1F2700AE9141 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BF62A6F1F8D1F2700AE9141 /* Info.plist */; };
 		9BFBA5C81F8BBC6A0023EC7F /* CapturedVideosCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFBA5C71F8BBC6A0023EC7F /* CapturedVideosCollectionVC.swift */; };
 		9BFBA5CB1F8BC1D20023EC7F /* VideoCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFBA5CA1F8BC1D20023EC7F /* VideoCollectionCell.swift */; };
 		C733F3E11D3D18CE00072F73 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C733F3DF1D3D18CE00072F73 /* AVFoundation.framework */; };
@@ -19,9 +24,8 @@
 		C745FABD1D3E243700289BBE /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C745FABC1D3E243700289BBE /* AssetsLibrary.framework */; };
 		C77575A81D4FAD8700215573 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77575A71D4FAD8700215573 /* Timer.swift */; };
 		C7B45C5B1D3E9149003AC44C /* CameraBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B45C591D3E9149003AC44C /* CameraBarButton.swift */; };
-		C7B45C5C1D3E9149003AC44C /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B45C5A1D3E9149003AC44C /* RecordButton.swift */; };
 		C7F03DFC1D3CBADA002B10C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F03DFB1D3CBADA002B10C1 /* AppDelegate.swift */; };
-		C7F03DFE1D3CBADA002B10C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F03DFD1D3CBADA002B10C1 /* ViewController.swift */; };
+		C7F03DFE1D3CBADA002B10C1 /* RecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F03DFD1D3CBADA002B10C1 /* RecorderViewController.swift */; };
 		C7F03E011D3CBADA002B10C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F03DFF1D3CBADA002B10C1 /* Main.storyboard */; };
 		C7F03E031D3CBADA002B10C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F03E021D3CBADA002B10C1 /* Assets.xcassets */; };
 		C7F03E061D3CBADA002B10C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F03E041D3CBADA002B10C1 /* LaunchScreen.storyboard */; };
@@ -49,11 +53,16 @@
 		9B598F3B1F8BD7A400FCAB49 /* AZVideoRecorderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AZVideoRecorderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B598F3D1F8BD7A400FCAB49 /* VideoRecordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecordTests.swift; sourceTree = "<group>"; };
 		9B598F3F1F8BD7A400FCAB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BA7A1EB1F8E62E700D8FDA0 /* RecordingContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingContainerController.swift; sourceTree = "<group>"; };
 		9BF62A4E1F8CEB3200AE9141 /* VideoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoUtils.swift; sourceTree = "<group>"; };
 		9BF62A501F8CEC9F00AE9141 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		9BF62A561F8CFC0300AE9141 /* AZVideoRecorderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AZVideoRecorderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BF62A581F8CFC0300AE9141 /* AZVideoRecorderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AZVideoRecorderUITests.swift; sourceTree = "<group>"; };
 		9BF62A5A1F8CFC0300AE9141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BF62A611F8D032000AE9141 /* VideoPlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerController.swift; sourceTree = "<group>"; };
+		9BF62A631F8D11BE00AE9141 /* AppMemento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMemento.swift; sourceTree = "<group>"; };
+		9BF62A671F8D135C00AE9141 /* AppStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStates.swift; sourceTree = "<group>"; };
+		9BF62A6F1F8D1F2700AE9141 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BFBA5C71F8BBC6A0023EC7F /* CapturedVideosCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturedVideosCollectionVC.swift; sourceTree = "<group>"; };
 		9BFBA5CA1F8BC1D20023EC7F /* VideoCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionCell.swift; sourceTree = "<group>"; };
 		C733F3DF1D3D18CE00072F73 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -61,14 +70,12 @@
 		C745FABC1D3E243700289BBE /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		C77575A71D4FAD8700215573 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		C7B45C591D3E9149003AC44C /* CameraBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraBarButton.swift; path = Buttons/CameraBarButton.swift; sourceTree = "<group>"; };
-		C7B45C5A1D3E9149003AC44C /* RecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordButton.swift; path = Buttons/RecordButton.swift; sourceTree = "<group>"; };
 		C7F03DF81D3CBADA002B10C1 /* AZVideoRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AZVideoRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F03DFB1D3CBADA002B10C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C7F03DFD1D3CBADA002B10C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C7F03DFD1D3CBADA002B10C1 /* RecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderViewController.swift; sourceTree = "<group>"; };
 		C7F03E001D3CBADA002B10C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7F03E021D3CBADA002B10C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7F03E051D3CBADA002B10C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C7F03E071D3CBADA002B10C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,9 +123,26 @@
 			path = AZVideoRecorderUITests;
 			sourceTree = "<group>";
 		};
+		9BF62A601F8D031200AE9141 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9BF62A611F8D032000AE9141 /* VideoPlayerController.swift */,
+				C7F03DFD1D3CBADA002B10C1 /* RecorderViewController.swift */,
+				9B598F351F8BCFA400FCAB49 /* DataObserver.swift */,
+				9BFBA5C71F8BBC6A0023EC7F /* CapturedVideosCollectionVC.swift */,
+				C77575A71D4FAD8700215573 /* Timer.swift */,
+				C73D7C201D55DE100065BB78 /* VideoRecorder.swift */,
+				9BF62A631F8D11BE00AE9141 /* AppMemento.swift */,
+				9BF62A671F8D135C00AE9141 /* AppStates.swift */,
+				9BA7A1EB1F8E62E700D8FDA0 /* RecordingContainerController.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
 		9BFBA5C91F8BC1A70023EC7F /* view */ = {
 			isa = PBXGroup;
 			children = (
+				C7B45C571D3E9108003AC44C /* Buttons */,
 				9BFBA5CA1F8BC1D20023EC7F /* VideoCollectionCell.swift */,
 			);
 			name = view;
@@ -128,7 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				C7B45C591D3E9149003AC44C /* CameraBarButton.swift */,
-				C7B45C5A1D3E9149003AC44C /* RecordButton.swift */,
 			);
 			name = Buttons;
 			sourceTree = "<group>";
@@ -145,7 +168,7 @@
 		C7F03DEF1D3CBADA002B10C1 = {
 			isa = PBXGroup;
 			children = (
-				C7F03DFA1D3CBADA002B10C1 /* VideoRecord */,
+				C7F03DFA1D3CBADA002B10C1 /* AZVideoRecorder */,
 				C7B45C581D3E9111003AC44C /* frameworks */,
 				9B598F3C1F8BD7A400FCAB49 /* VideoRecordTests */,
 				9BF62A571F8CFC0300AE9141 /* AZVideoRecorderUITests */,
@@ -163,25 +186,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C7F03DFA1D3CBADA002B10C1 /* VideoRecord */ = {
+		C7F03DFA1D3CBADA002B10C1 /* AZVideoRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				9BF62A6F1F8D1F2700AE9141 /* Info.plist */,
+				9BF62A601F8D031200AE9141 /* controllers */,
 				9BFBA5C91F8BC1A70023EC7F /* view */,
-				C7B45C571D3E9108003AC44C /* Buttons */,
 				C7F03DFB1D3CBADA002B10C1 /* AppDelegate.swift */,
-				C7F03DFD1D3CBADA002B10C1 /* ViewController.swift */,
-				9B598F351F8BCFA400FCAB49 /* DataObserver.swift */,
-				9BFBA5C71F8BBC6A0023EC7F /* CapturedVideosCollectionVC.swift */,
-				C77575A71D4FAD8700215573 /* Timer.swift */,
-				C73D7C201D55DE100065BB78 /* VideoRecorder.swift */,
 				C7F03DFF1D3CBADA002B10C1 /* Main.storyboard */,
 				C7F03E041D3CBADA002B10C1 /* LaunchScreen.storyboard */,
 				C7F03E021D3CBADA002B10C1 /* Assets.xcassets */,
-				C7F03E071D3CBADA002B10C1 /* Info.plist */,
 				9BF62A4E1F8CEB3200AE9141 /* VideoUtils.swift */,
 				9BF62A501F8CEC9F00AE9141 /* Video.swift */,
 			);
-			path = VideoRecord;
+			path = AZVideoRecorder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +328,7 @@
 				C7F03E061D3CBADA002B10C1 /* LaunchScreen.storyboard in Resources */,
 				C7F03E031D3CBADA002B10C1 /* Assets.xcassets in Resources */,
 				C7F03E011D3CBADA002B10C1 /* Main.storyboard in Resources */,
+				9BF62A701F8D1F2700AE9141 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,12 +355,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7B45C5C1D3E9149003AC44C /* RecordButton.swift in Sources */,
 				C7B45C5B1D3E9149003AC44C /* CameraBarButton.swift in Sources */,
 				9B598F361F8BCFA400FCAB49 /* DataObserver.swift in Sources */,
-				C7F03DFE1D3CBADA002B10C1 /* ViewController.swift in Sources */,
+				C7F03DFE1D3CBADA002B10C1 /* RecorderViewController.swift in Sources */,
+				9BF62A641F8D11BE00AE9141 /* AppMemento.swift in Sources */,
+				9BF62A681F8D135C00AE9141 /* AppStates.swift in Sources */,
 				C77575A81D4FAD8700215573 /* Timer.swift in Sources */,
 				C7F03DFC1D3CBADA002B10C1 /* AppDelegate.swift in Sources */,
+				9BA7A1EC1F8E62E700D8FDA0 /* RecordingContainerController.swift in Sources */,
+				9BF62A621F8D032000AE9141 /* VideoPlayerController.swift in Sources */,
 				9BFBA5C81F8BBC6A0023EC7F /* CapturedVideosCollectionVC.swift in Sources */,
 				9BF62A511F8CEC9F00AE9141 /* Video.swift in Sources */,
 				C73D7C211D55DE100065BB78 /* VideoRecorder.swift in Sources */,
@@ -594,8 +616,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C5JGX3BV9X;
-				INFOPLIST_FILE = VideoRecord/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				INFOPLIST_FILE = "$(SRCROOT)/AZVideoRecorder/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = VideoRecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -609,8 +631,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C5JGX3BV9X;
-				INFOPLIST_FILE = VideoRecord/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				INFOPLIST_FILE = "$(SRCROOT)/AZVideoRecorder/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = VideoRecord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
